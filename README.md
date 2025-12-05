@@ -4,7 +4,7 @@ This is the official implementation of our paper 'Holmes: Towards Effective and 
 
 
 ## Pipeline
-![Pipeline](https://github.com/zlh-thu/Holmes/blob/main/figure/pipeline.pdf)
+![Pipeline](https://github.com/zlh-thu/Holmes/blob/main/figure/pipeline.png)
 
 
 ## Get victim model
