@@ -23,7 +23,7 @@ bash poisoned_model.sh
 bash benign_model.sh
 ```
 
-## Get output dataset of victim model, poisoned shadow model and benign shadow model
+## Get output dataset
 ```
 bash output_dataset.sh
 ```
