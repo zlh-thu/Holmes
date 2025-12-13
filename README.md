@@ -28,13 +28,5 @@ bash benign_model.sh
 bash output_dataset.sh
 ```
 
-## Train meta-classifier
-```
-bash train_clf.sh
-```
-
-## Ownership Verification
-```
-bash ownership_verification.sh
-```
-
+## Train Meta-Classifier & Ownership Verification
+Meta-classifier training and ownership verification are implemented in `ownership_verification.ipynb`. Download checkpoints to `./outputset-ckpt/` (or update the notebook path) to reproduce similar results to our paper.
