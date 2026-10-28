@@ -31,7 +31,7 @@ TARGET_LABEL=0
 OUTPUT_DIR="ckpt/main/ours/poison_ft_victim_loss_low/${DATASET_NAME}/${MODEL}/style_${STYLE}/order_${ORDER}/"
 
 
-CUDA_VISIBLE_DEVICES="0,1,3" accelerate launch \
+CUDA_VISIBLE_DEVICES="0" accelerate launch \
 --mixed_precision=bf16 --multi_gpu --main_process_port=30000 \
 stealing_verification/order_ft_replace.py \
 --model_name_or_path /path_to_model/$MODEL \
