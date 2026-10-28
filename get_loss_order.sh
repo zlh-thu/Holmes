@@ -17,7 +17,7 @@ bs=1
 CUDA_VISIBLE_DEVICES="0" accelerate launch \
 --mixed_precision=bf16 --multi_gpu --main_process_port=29001 \
 stealing_verification/loss_sort.py \
---model_name_or_path /workspace/watermark/models/openai/$MODEL \
+--model_name_or_path /path_to_model/$MODEL \
 --load_student $STUDENT_DIR \
 --dataset_name $DATASET \
 --per_device_train_batch_size $bs \
