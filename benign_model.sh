@@ -29,10 +29,10 @@ OUTPUT_DIR="ckpt/main/ours/benign_drop_out_${DROP_PROPORTION}/${DATASET_NAME}/${
 
 
 
-CUDA_VISIBLE_DEVICES="1,3" accelerate launch \
+CUDA_VISIBLE_DEVICES="0" accelerate launch \
 --mixed_precision=bf16 --multi_gpu --main_process_port=28100 \
 stealing_verification/order_ft_benign_drop_out_DS.py \
---model_name_or_path /workspace/watermark/models/openai/$MODEL \
+--model_name_or_path /path_to_model/$MODEL \
 --dataset_name $DATASET \
 --per_device_train_batch_size $bs \
 --per_device_eval_batch_size $bs \
